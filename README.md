@@ -16,7 +16,8 @@ This will run the unit tests in 'test_unit.py' and the integration test in 'test
 Refer to comments for test context.
 
 When writing up the app, I wanted to use the Application Factory approach, where I define the creation of the app in a function and register blueprints
-connected to the endpoints. This allows easy implementation of pytest with a test application. For the design of the app itself, I have the database keep
+connected to the endpoints. The app has a seperate file for the API endpoints, the database model, extensions (which at the moment is only .db, but I would include authentication here if I implemented it),
+and then 'app.py', which runs it. The Application Factory approach with blueprints allows easy implementation of pytest with a test instance of application. For the design of the app itself, I have the database keep
 all statuses stored so that any historical status can be accessed, while other routes use queries to find get specific data.
 
 As for the tests, I didn't do much test writing in pytest prior to this, so reading up methodology and documentation was quite a fun experience!
