@@ -1,0 +1,7 @@
+{
+"device_id": "sensor-abc-123",
+"timestamp": "2025-06-09T14:00:00Z",
+"battery_level": 76,
+"rssi": -60,
+"online": true
+}
